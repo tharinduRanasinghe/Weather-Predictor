@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="City selection">
+        <EditTextPreference
+            android:key="city"
+            android:title="City"
+            android:defaultValue="Chicago"
+            android:summary="Select your city"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Units selection">
+        <ListPreference
+            android:key="temp"
+            android:title="Temperature Unit"
+            android:summary="Select your Temperature Unit"
+            android:defaultValue="metric"
+            android:entries="@array/units"
+            android:entryValues="@array/units_value"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
